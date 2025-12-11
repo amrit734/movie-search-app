@@ -1,0 +1,122 @@
+body {
+    background-color: rgb(66, 66, 66);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.div-title {
+    background-color: rgb(94, 94, 94);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+h1 {
+    margin-bottom: -1rem;
+}
+
+.search form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(94, 94, 94);
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 4rem;
+    width: 35rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: rgb(94, 94, 94);
+    min-height: 28rem;
+    min-width: 60rem;
+    max-width: 83rem;
+    border-radius: 1rem;
+    padding: 1rem 0rem 1rem 0rem;
+    margin-top: 1rem;
+}
+
+.div-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    visibility: hidden;
+}
+
+.div-nav button{
+    height: 2rem;
+    width: 4rem;
+}
+
+img {
+    height: 30rem;
+    width: 19rem;
+}
+
+#img-load {
+    height: 30rem;
+    width: 30rem;
+    animation-name: anim-load;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#txt-pgno {
+    color: whitesmoke;
+    font-family: "Impact", sans-serif;
+    font-size: 25px;
+}
+
+.span-movie {
+    display : flex;
+    flex-direction: column;
+    background-color: rgb(134, 134, 134);
+    width: 19rem;
+    border-radius: 0.5rem;
+    padding : 0.5rem;
+    cursor: grab;
+    transition: background-color 0.5s;
+}
+
+.span-movie:hover {
+    background-color: rgb(170, 170, 170);
+}
+
+#img-favourite {
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    transform: translate(7rem, 4rem);
+    cursor: grab;
+}
+
+@keyframes anim-load {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    .movie-list {
+        min-width: 20rem;
+        max-width: 25rem;
+    }
+
+    .search form {
+        width: 25rem;
+    }
+}

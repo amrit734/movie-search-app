@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="div-title">
+            <h1>Movie Search</h1>
+            <h2>By Amrit Stephen Anand</h2>
+        </div>
+        <div class="search">
+            <form id="frm-search">
+                <input type="text" id="omdb-key" placeholder="Enter valid omdb key" required/>
+                <input type="text" id="txt-input" placeholder="Enter movie title" required/>
+                <input type="submit">
+                <input type="button" id="btn-favourites" value="Load Favourites"/>
+            </form>
+        </div>
+        <div class="div-nav">
+            <button id="pg-back">Back</button>
+            <p id="txt-pgno"></p>
+            <button id="pg-next">Next</button>
+        </div>
+        <div class="movie-list">
+
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
