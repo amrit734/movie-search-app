@@ -236,7 +236,7 @@ frmSearch.addEventListener("submit", async (event) => {
     getMovies();
 });
 
-//Event Handl8ing For Favourites Button
+//Event Handling For Favourites Button
 btnFavourites.addEventListener("click", async () => {
     if (favourites.length > 0) {
         showLoading();
