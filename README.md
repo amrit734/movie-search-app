@@ -23,10 +23,11 @@ Functionality
 Instructions
 -------------
 
-- Enter a valid OMDB APi key into the required field. A key may be obtained from the official site, https://www.omdbapi.com/
+- Enter a valid OMDB API key into the required field. A key may be obtained from the official site, https://www.omdbapi.com/
 - Enter the title of a movie to be located and click the search button
 - A list of movies are displayed upon searching
 - Select a movie to display additional information related to the movie
 - Click the star beside a movie's poster to mark it as a favourite
 
 - Click the "load favourites" option to display saved favourites
+
