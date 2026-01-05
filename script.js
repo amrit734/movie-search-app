@@ -5,6 +5,7 @@ const pgNext = document.querySelector("#pg-next");
 const btnFavourites = document.querySelector("#btn-favourites");
 var movieContent = [];
 var favourites = [];
+var valid = 0;
 
 //Load Stored Data
 if (localStorage.getItem("movie-favourites")) {
@@ -233,14 +234,19 @@ frmSearch.addEventListener("submit", async (event) => {
     apiKey = document.querySelector("#omdb-key").value;
     event.preventDefault();
     page = 1;
+    valid = 1;
     getMovies();
 });
 
 //Event Handling For Favourites Button
 btnFavourites.addEventListener("click", async () => {
     if (favourites.length > 0) {
-        showLoading();
-        fillList(favourites);
+        if (valid != 1) {
+		    alert("Please submit a request with a valid API key before loading favourites");
+	    } else {
+		    showLoading();
+        	fillList(favourites);
+	    }
     }
     else {
         alert("No movies added to favourites");
